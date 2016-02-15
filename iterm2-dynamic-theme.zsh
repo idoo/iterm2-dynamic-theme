@@ -3,7 +3,7 @@ function set_iterm_profile() {
 }
 
 function start_dynamic_theme() {
-  HOUR=`date +%H`
+  local HOUR=`date +%H`
   if [ $HOUR -ge 8 -a $HOUR -le 17 ]; then
     set_iterm_profile light
   else
